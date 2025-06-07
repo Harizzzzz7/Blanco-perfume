@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>AI Perfume Helper</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="products.html">Products</a>
+    <a href="ai.html">AI Helper</a>
+    <a href="cart.html">Cart</a>
+  </nav>
+  <h2>AI Perfume Recommender</h2>
+  <button onclick="recommendPerfume()">Get Recommendation</button>
+  <p id="ai-result"></p>
+  <script>
+    function recommendPerfume() {
+      const mood = prompt("How do you feel today? (e.g., romantic, fresh, bold)");
+      let suggestion = "Try 'Mystic Woods' for an earthy tone.";
+      if (mood.includes("romantic")) suggestion = "Try 'Rose Elegance'!";
+      if (mood.includes("fresh")) suggestion = "Try 'Ocean Breeze'!";
+      if (mood.includes("bold")) suggestion = "Try 'Spice Blaze'!";
+      document.getElementById("ai-result").innerText = suggestion;
+    }
+  </script>
+</body>
+</html>

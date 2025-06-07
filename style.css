@@ -1,0 +1,28 @@
+body {
+  font-family: sans-serif;
+  padding: 1rem;
+  background: #fffdfc;
+}
+
+nav {
+  margin-bottom: 1rem;
+}
+
+nav a {
+  margin-right: 10px;
+  text-decoration: none;
+  color: #b03a2e;
+  font-weight: bold;
+}
+
+h2 {
+  color: #b03a2e;
+}
+
+.product {
+  border: 1px solid #ddd;
+  padding: 1rem;
+  margin: 1rem 0;
+  background: #fffaf6;
+  border-radius: 5px;
+}
